@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Giriş Yap</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function login() {
+      var username = document.getElementById("username").value;
+      if (username.trim() === "") {
+        alert("Lütfen Minecraft adınızı girin!");
+        return;
+      }
+      localStorage.setItem("minecraftUser", username);
+      window.location.href = "index.html";
+    }
+  </script>
+</head>
+<body>
+  <h1>🟢 MineSmartHQ Giriş</h1>
+  <p>Oyuncu adınızı girin:</p>
+  <input type="text" id="username" placeholder="Minecraft kullanıcı adınız">
+  <button onclick="login()">Giriş Yap</button>
+</body>
+</html>
