@@ -1,0 +1,36 @@
+
+body {
+  background-color: #2d2d2d;
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+  padding: 40px;
+}
+input, button {
+  padding: 10px;
+  font-size: 16px;
+  margin: 5px;
+  border-radius: 6px;
+  border: none;
+}
+input {
+  width: 260px;
+}
+button {
+  background-color: #00ffcc;
+  color: black;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #00e6b8;
+}
+a {
+  display: inline-block;
+  margin: 15px;
+  color: #00ffcc;
+  text-decoration: none;
+  font-weight: bold;
+}
+a:hover {
+  text-decoration: underline;
+}
