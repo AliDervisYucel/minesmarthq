@@ -4,20 +4,20 @@
 <head>
   <title>Hayatta Kalma Taktikleri</title>
   <link rel="stylesheet" href="style.css">
+  <script>
+    window.onload = function() {
+      const params = new URLSearchParams(window.location.search);
+      const oyuncu = params.get("oyuncu");
+      if (oyuncu) {
+        document.getElementById("oyuncuSelam").innerText = "🧑 Hoş geldin, " + oyuncu + "!";
+      }
+    }
+  </script>
 </head>
 <body>
-  <h1>🛡️ Hayatta Kalma</h1>
-  <p>Oyunu direk speedrunlamak icin yapmanız gereken şeyler vardır.Bugün sizlere bunu nasıl yapabileceğinizi göstericem.<br>
-  1. İlk olarak odun kazarak başlarız.Bu çok normal değil mi?<br>
-  2. 3 odun topladıktan sonra 1 eşya yapma masası ve 2 çubuk yapılır.<br>
-  3. Yakında bir yerlerde taş varsa kazılır, yoksa da oyuncu altını kazar.<br>
-  4. Oyuncu yeterli taş ile 3 odun daha kasar ve çubuk yapıp (hepsini çubuk yapmak zorunda değil) taş balta ve kazma yapar.<br>
-  5. Oyuncu sonra bir köy arayışına çıkar.<br>
-  6. Oyuncu köy bulunca kısmen yağmalar.Blacksmith varsa sandıktaki armour,tool gibi şeyleri alır.Sonra biraz daha gelişmek için madene girer.(şeker kamışı ve deri toplamaya çalışır.<br>
-  7. Oyuncu madende elmas ve demir aramaya başlar(opsiyonel olarak lapis ve altın).Mineshaft gibi yapılar bulursa girer.<br>
-  8. Bulduğu elmaslarla oyuncu kendisine kazma,kılıç gibi şeyler yapar.PVP için balta kullanıyorsanız kılıca ihtiyaç yoktur.<br>
-  9. Oyuncu kalan elmaslarda büyü masası yapar.<br>
-  10. Daha fazla elmas kalırsa oyuncu armour yapar.Elmas tam yetmezse demir ile eksikleri kapatır.</p>
+  <h1 id="oyuncuSelam">🧑 Hoş geldin!</h1>
+  <h2>🛡️ Hayatta Kalma Taktikleri</h2>
+  <p>İlk gece sığınak kur. Ağaç topla, kazma yap, creeper'lardan uzak dur!</p>
   <a href="index.html">⬅️ Ana Sayfa</a>
 </body>
 </html>
