@@ -1,0 +1,22 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ayarlar</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>⚙️ Ayarlar</h1>
+
+  <p>Buradan görünüm, ses, dil ve oyuncu ayarlarını düzenleyebilirsin.</p>
+
+  <ul>
+    <li>🎮 Kullanıcı adı: <script>document.write(localStorage.getItem("minecraftUser") || "Bilinmiyor")</script></li>
+    <li>🌐 Dil: <select><option>Türkçe</option><option>English</option></select></li>
+    <li>🔊 Ses: <input type="range" min="0" max="100" value="70"></li>
+    <li>🎨 Tema: <select><option>Klasik</option><option>Koyu</option><option>Aydınlık</option></select></li>
+  </ul>
+
+  <p><a href="index.html">⬅️ Ana Sayfa</a></p>
+</body>
+</html>
